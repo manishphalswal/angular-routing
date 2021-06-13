@@ -1,0 +1,15 @@
+<div *ngIf="selectedUser != null">
+    <h5>Details of the user:</h5>
+    <div>
+        <strong>Name: </strong>{{ selectedUser.name }}
+    </div>
+    <div>
+        <strong>Username: </strong>{{ selectedUser.username }}
+    </div>
+    <div>
+        <strong>Email: </strong>{{ selectedUser.email }}
+    </div>
+</div>
+<div *ngIf="selectedUser === null">
+    Please select a user from the given list.
+</div>
